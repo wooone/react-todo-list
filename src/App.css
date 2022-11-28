@@ -23,7 +23,7 @@
 html,
 body {
   background: rgb(44, 62, 78);
-  background: linear-gradient(90deg, rgba(44, 62, 78, 1) 0%, rgba(55, 80, 101, 1) 53%, rgba(68, 102, 130, 1) 100%);
+  background: linear-gradient(60deg, #29323c 0%, #485563 100%);
   font-size: 1.1rem;
   font-family: "Quicksand", sans-serif;
   height: 100%;
