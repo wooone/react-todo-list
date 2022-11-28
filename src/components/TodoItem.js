@@ -1,12 +1,13 @@
-import '../css/TodoItem.css'
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import '../css/TodoItem.css'
 
 function TodoItem({ todo, remove, update, toggleComplete }) {
   const [isEditing, setIsEditing] = useState(false);
-  const [task, setTask] = useState();
+  const [task, setTask] = useState(todo.task);
 
   const handleClick = evt => {
+    console.log(evt.target.id)
     remove(evt.target.id)
   }
 
@@ -54,7 +55,7 @@ function TodoItem({ todo, remove, update, toggleComplete }) {
             <FontAwesomeIcon icon="pen" />
           </button>
           <button onClick={handleClick}>
-            <FontAwesomeIcon icon="trash" id={todo.id}/>
+            <FontAwesomeIcon id={todo.id} icon="trash" />
           </button>
         </div>
       </div>
