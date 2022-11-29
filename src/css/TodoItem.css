@@ -49,6 +49,16 @@
 	color: #fff;
 }
 
+.Todo-buttons button svg {
+	width: 16px;
+	height: 16px;
+	display: flex
+}
+
+.Todo-buttons button svg:hover {
+	fill: #f7f1f1
+}
+
 .Todo-buttons button:hover {
 	color: #f7f1f1
 }

@@ -16,7 +16,7 @@ function App() {
   }
 
   const remove = id => {
-    setTodos(todos.filter(todo => todo.id !== id))
+    setTodos(todos.filter(todo => todo.id !== id));
   }
 
   // 編輯後更新
